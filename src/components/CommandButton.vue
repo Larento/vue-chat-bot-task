@@ -1,5 +1,6 @@
 <template>
     <v-btn
+        :style="{ letterSpacing: 'normal' }"
         :elevation="0"
         @click="handleClick"
         density="compact"
@@ -8,7 +9,6 @@
         rounded="lg"
         color="indigo-darken-4"
         class="flex-grow font-weight-normal text-none"
-        :style="{ letterSpacing: 'normal' }"
     >
         {{ getCommandLabel(command) }}
     </v-btn>
