@@ -1,5 +1,7 @@
 <template>
-    <span :class="isTyping ? 'is-typing' : ''">{{ partialText }}</span>
+    <span :class="isTyping ? 'is-typing' : ''" class="typeout-text-container">
+        {{ partialText }}
+    </span>
 </template>
 
 <script setup lang="ts">
@@ -36,7 +38,9 @@ onMounted(typeText);
 </script>
 
 <style scoped lang="scss">
-span {
+.typeout-text-container {
+    display: flex;
+
     &:empty::before {
         content: '.';
         color: transparent;
@@ -44,8 +48,9 @@ span {
 
     &::after {
         display: inline;
+        margin-block: 2px;
         margin-left: 1px;
-        padding-left: 2px;
+        padding-left: 1.5px;
         background-color: transparent;
         animation: none;
         content: '';
