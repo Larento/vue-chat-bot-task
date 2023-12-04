@@ -102,20 +102,21 @@ setTimeout(() => store.executeCommand(), 300);
 }
 
 .fade {
-    &-move,
-    &-enter-active,
-    &-leave-active {
-        transition: all 0.25s ease;
-    }
-
-    &-leave-active {
-        position: relative;
-    }
-
     &-enter-from,
     &-leave-to {
         opacity: 0;
         transform: scale(0.95) translate(0, 10px);
+    }
+
+    &-enter-active,
+    &-leave-active {
+        transition: none 200ms ease;
+        transition-property: transform, opacity;
+        transition-delay: calc(var(--index) * 70ms);
+    }
+
+    &-enter-from {
+        transition: none;
     }
 }
 </style>
