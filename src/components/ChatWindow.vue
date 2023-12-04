@@ -95,11 +95,10 @@ setTimeout(() => store.executeCommand(), 300);
 .avatar-container {
     width: 40px;
     height: 40px;
+}
 
-    > * {
-        width: 100%;
-        height: 100%;
-    }
+.message-bubble-container {
+    max-width: min(40ch, 60vw);
 }
 
 .fade {
