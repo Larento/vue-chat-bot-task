@@ -1,6 +1,6 @@
 <template>
     <div
-        class="mb-0 align-self-start position-relative message-bubble-container"
+        class="position-relative message-bubble-container"
         :class="isBotSender ? '' : 'person-sender'"
     >
         <div class="bubble-arrow"></div>

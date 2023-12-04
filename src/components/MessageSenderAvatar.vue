@@ -3,7 +3,7 @@
         :icon="isBotSender ? 'mdi-robot-happy' : 'mdi-account'"
         :color="isBotSender ? 'indigo-darken-1' : 'indigo-lighten-4'"
         variant="tonal"
-        class="pa-2 flex-shrink-0 align-self-end w-100 h-100"
+        class="pa-2 flex-shrink-0 w-100 h-100"
     >
     </v-avatar>
 </template>
