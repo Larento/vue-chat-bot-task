@@ -39,7 +39,7 @@ onMounted(typeText);
 
 <style scoped lang="scss">
 .typeout-text-container {
-    display: flex;
+    display: inline;
 
     &:empty::before {
         content: '.';
@@ -51,6 +51,7 @@ onMounted(typeText);
         margin-block: 2px;
         margin-left: 1px;
         padding-left: 1.5px;
+        outline: 1px transparent solid;
         background-color: transparent;
         animation: none;
         content: '';
