@@ -23,10 +23,7 @@
             <transition-group name="fade" @after-leave="handleCommandButtonAfterLeave">
                 <command-button
                     v-for="(command, index) in store.commandList"
-                    v-if="!store.currentCommand"
-                    :key="index"
-                    :data-index="index"
-                    :command="command"
+                            v-visible="!store.currentCommand"
                     @before-set-command="isCommandAlreadyPosted = false"
                 >
                 </command-button>
