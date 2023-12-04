@@ -12,6 +12,7 @@ endif::[]
 
 
 == Демо
+
 Github Pages: https://larento.github.io/vue-chat-bot-task
 
 
@@ -36,6 +37,7 @@ Github Pages: https://larento.github.io/vue-chat-bot-task
 
 
 == Используемые технологии
+
 * Vue.js
 * Vuetify - библиотека компонентов для Vue.
 * Sass
