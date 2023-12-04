@@ -1,5 +1,5 @@
 <template>
-    <span :class="isTyping ? 'is-typing' : ''" class="typeout-text-container">
+    <span :class="{ 'is-typing': isTyping }" class="typeout-text-container">
         {{ partialText }}
     </span>
 </template>
