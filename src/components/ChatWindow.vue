@@ -36,12 +36,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { type Message } from '@/modules/chat';
 import { store } from '@/modules/store';
+
 import MessageSenderAvatar from '@/components/MessageSenderAvatar.vue';
 import MessageBubble from '@/components/MessageBubble.vue';
 import CommandButton from '@/components/CommandButton.vue';
-import { Message } from '@/modules/chat';
 
 const isCommandAlreadyPosted = ref(false);
 const isBotSender = (message: Message) => message.sender === 'bot';
